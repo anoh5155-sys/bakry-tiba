@@ -3,38 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>طيبة - من الفينو للجاتوه | المنيو الإلكتروني</title>
+    <title>طيبة - من الفينو للجاتوه | المنيو والفروع الرسمية</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: 'Cairo', sans-serif;
-            background-color: #fcfbf9;
-        }
+        body { font-family: 'Cairo', sans-serif; background-color: #fcfbf9; }
     </style>
 </head>
 <body class="bg-amber-50/30 text-gray-800">
 
-    <!-- Header -->
+    <!-- Header with Prominent Hot Line & Tiba Logo -->
     <header class="bg-purple-950 text-white shadow-lg sticky top-0 z-50 border-b-4 border-amber-400">
         <div class="container mx-auto px-4 py-4 flex flex-col md:flex-row justify-between items-center gap-4">
-            <div class="text-center md:text-right">
-                <h1 class="text-3xl font-black text-amber-400 tracking-wide">طيبة</h1>
-                <p class="text-sm text-amber-200">من الفينو للجاتوه 🍩🥐🎂</p>
-                <div class="mt-1 inline-block bg-amber-400 text-purple-950 font-bold px-3 py-1 rounded-full text-xs">
-                    Hot Line: 17548
+            
+            <!-- Brand Logo & Slogan -->
+            <div class="text-center md:text-right flex flex-col md:flex-row items-center gap-4">
+                <div class="bg-white/10 p-3 rounded-2xl border border-amber-400/40 shadow-inner flex items-center gap-3">
+                    <div class="text-center">
+                        <span class="text-3xl font-black text-amber-400 tracking-wider block">TIBA</span>
+                        <div class="text-[11px] text-amber-200 font-bold">طيبة من الفينو للجاتوه</div>
+                    </div>
+                </div>
+                <div>
+                    <div class="flex flex-wrap items-center justify-center md:justify-start gap-2">
+                        <span class="bg-amber-400 text-purple-950 text-xs font-black px-2.5 py-0.5 rounded-full shadow">26 عاماً من الخبرة</span>
+                        <span class="text-xs text-amber-300 font-bold tracking-wide">| على الأصل دور 🥖</span>
+                    </div>
+                    <!-- Prominent Hot Line -->
+                    <div class="mt-2 bg-purple-900/80 border border-amber-400/50 px-4 py-1.5 rounded-xl inline-block shadow">
+                        <span class="text-xs text-purple-200">الخط الساخن:</span> 
+                        <span class="text-xl font-black text-amber-400 tracking-wider mr-1">17548</span>
+                    </div>
+                    <p class="text-[11px] text-rose-300 font-bold mt-1">⚠️ ليس لنا فروع أخرى بالعجوزة أو غير المعلنة</p>
                 </div>
             </div>
             
-            <!-- Quick Action Buttons linked to 01112249139 -->
+            <!-- Action Buttons -->
             <div class="flex flex-wrap justify-center gap-2">
-                <a href="https://wa.me/201112249139?text=%Dالسلام%20عليكم،%20أريد%20الاستفسار%20أو%20التحدث%20لخدمة%20العملاء" target="_blank" class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-4 py-2 rounded-xl shadow text-sm flex items-center gap-2 transition">
-                    <span>💬 خدمة العملاء</span>
+                <a href="#branches-section" class="bg-amber-400 hover:bg-amber-500 text-purple-950 font-bold px-4 py-2.5 rounded-xl text-sm transition shadow flex items-center gap-1">
+                    <span>📍 فروعنا واللوكيشن</span>
                 </a>
-                <button onclick="toggleCartModal()" class="bg-amber-400 hover:bg-amber-500 text-purple-950 font-bold px-4 py-2 rounded-xl shadow flex items-center gap-2 transition transform hover:scale-105">
-                    <span>🛒 السلة</span>
-                    <span id="cart-count" class="bg-purple-950 text-white text-xs px-2 py-0.5 rounded-full">0</span>
+                <button onclick="toggleCartModal()" class="bg-amber-400 hover:bg-amber-500 text-purple-950 font-bold px-5 py-2.5 rounded-xl shadow flex items-center gap-2 transition transform hover:scale-105">
+                    <span>🛒 السلة</span> <span id="cart-count" class="bg-purple-950 text-white text-xs px-2 py-0.5 rounded-full">0</span>
                 </button>
             </div>
         </div>
@@ -43,31 +54,151 @@
     <!-- Main Container -->
     <main class="container mx-auto px-4 py-8 max-w-6xl">
         
-        <!-- Direct WhatsApp Support Banner linked to 01112249139 -->
-        <div class="bg-gradient-to-r from-purple-900 to-purple-950 text-white rounded-2xl p-6 mb-8 shadow-md flex flex-col md:flex-row justify-between items-center gap-4 border border-amber-400/30">
-            <div>
-                <h2 class="text-xl font-bold text-amber-400 mb-1">عندك استفسار أو حابب تطلب مباشرة؟</h2>
-                <p class="text-sm text-purple-200">فريق خدمة العملاء جاهز لخدمتك وتلقي كافة طلباتكم على مدار الساعة.</p>
-            </div>
-            <a href="https://wa.me/201112249139?text=%Dالسلام%20عليكم،%20أريد%20طلب%20منتج%20أو%20الاستفسار%20عن%20الأوردر" target="_blank" class="bg-amber-400 hover:bg-amber-500 text-purple-950 font-bold px-6 py-3 rounded-xl shadow-lg transition whitespace-nowrap">
-                تواصل عبر واتساب الآن 📱
-            </a>
-        </div>
-
         <!-- Category Navigation Bar -->
         <div class="flex overflow-x-auto gap-2 pb-4 mb-8 no-scrollbar scroll-smooth">
-            <button onclick="filterCategory('all')" class="cat-btn active-cat whitespace-nowrap px-5 py-2 rounded-xl font-bold bg-purple-900 text-white shadow">الكل</button>
-            <button onclick="filterCategory('western')" class="cat-btn whitespace-nowrap px-5 py-2 rounded-xl font-bold bg-white text-purple-900 border border-purple-200 shadow-sm hover:bg-purple-50">حلويات غربية وتورت</button>
-            <button onclick="filterCategory('eastern')" class="cat-btn whitespace-nowrap px-5 py-2 rounded-xl font-bold bg-white text-purple-900 border border-purple-200 shadow-sm hover:bg-purple-50">حلويات شرقية</button>
-            <button onclick="filterCategory('bakery')" class="cat-btn whitespace-nowrap px-5 py-2 rounded-xl font-bold bg-white text-purple-900 border border-purple-200 shadow-sm hover:bg-purple-50">مخبوزات وفينو</button>
-            <button onclick="filterCategory('salaison')" class="cat-btn whitespace-nowrap px-5 py-2 rounded-xl font-bold bg-white text-purple-900 border border-purple-200 shadow-sm hover:bg-purple-50">ساليزون وبيتزا</button>
-            <button onclick="filterCategory('cookies')" class="cat-btn whitespace-nowrap px-5 py-2 rounded-xl font-bold bg-white text-purple-900 border border-purple-200 shadow-sm hover:bg-purple-50">بسكويت وكحك وغريبة</button>
-            <button onclick="filterCategory('diet')" class="cat-btn whitespace-nowrap px-5 py-2 rounded-xl font-bold bg-white text-purple-900 border border-purple-200 shadow-sm hover:bg-purple-50">نواشف ريجيم</button>
+            <button onclick="filterCategory('all')" class="cat-btn active-cat whitespace-nowrap px-4 py-2 rounded-xl font-bold bg-purple-900 text-white shadow">الكل</button>
+            <button onclick="filterCategory('western')" class="cat-btn whitespace-nowrap px-4 py-2 rounded-xl font-bold bg-white text-purple-900 border shadow-sm">حلويات غربية</button>
+            <button onclick="filterCategory('torte')" class="cat-btn whitespace-nowrap px-4 py-2 rounded-xl font-bold bg-white text-purple-900 border shadow-sm">التورت</button>
+            <button onclick="filterCategory('eastern')" class="cat-btn whitespace-nowrap px-4 py-2 rounded-xl font-bold bg-white text-purple-900 border shadow-sm">حلويات شرقية</button>
+            <button onclick="filterCategory('bakery')" class="cat-btn whitespace-nowrap px-4 py-2 rounded-xl font-bold bg-white text-purple-900 border shadow-sm">مخبوزات ودنش</button>
+            <button onclick="filterCategory('salaison')" class="cat-btn whitespace-nowrap px-4 py-2 rounded-xl font-bold bg-white text-purple-900 border shadow-sm">ساليزون وبيتزا</button>
+            <button onclick="filterCategory('cookies')" class="cat-btn whitespace-nowrap px-4 py-2 rounded-xl font-bold bg-white text-purple-900 border shadow-sm">بسكويت وكحك وغريبة</button>
+            <button onclick="filterCategory('diet')" class="cat-btn whitespace-nowrap px-4 py-2 rounded-xl font-bold bg-white text-purple-900 border shadow-sm">نواشف ريجيم</button>
         </div>
 
         <!-- Menu Grid -->
-        <div id="menu-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <!-- Items populated via JS -->
+        <div id="menu-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16"></div>
+
+        <!-- Professional Branches & Locations Section with Full Phones -->
+        <div id="branches-section" class="bg-purple-950 text-white rounded-3xl p-6 md:p-10 shadow-xl border-4 border-amber-400 mt-12 relative overflow-hidden">
+            <div class="text-center mb-10 relative z-10">
+                <h2 class="text-3xl font-black text-amber-400 mb-2">فروعنا وأرقام الهواتف والخرائط</h2>
+                <p class="text-sm text-purple-200">التواصل مع كافة فروعنا عبر الهواتف أو الواتساب أو الانتقال الفوري للوكيشن</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 relative z-10">
+                
+                <!-- فرع العجوزة -->
+                <div class="bg-purple-900/90 border border-amber-400/30 rounded-2xl p-5 flex flex-col justify-between shadow">
+                    <div>
+                        <h3 class="font-bold text-amber-400 text-xl mb-2">📌 فرع العجوزة (الرئيسي)</h3>
+                        <p class="text-xs text-purple-200 mb-2">٦٦ أبو المحاسن الشاذلي خلف مسرح البالون</p>
+                        <div class="text-xs text-amber-200 font-semibold mb-4 space-y-1">
+                            <p>📞 تليفون/واتساب: 01112249139</p>
+                            <p>☎️ أرضي: 33037143 - 01019842636</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-2">
+                        <a href="https://wa.me/201112249139?text=السلام%20عليكم،%20أريد%20الطلب%20من%20فرع%20العجوزة" target="_blank" class="flex-1 bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-2 rounded-xl text-xs text-center transition">
+                            💬 واتساب الفرع
+                        </a>
+                        <a href="https://maps.app.goo.gl/aGFyrNh1HYCcnn9R9" target="_blank" class="flex-1 bg-amber-400 hover:bg-amber-500 text-purple-950 font-bold py-2 px-2 rounded-xl text-xs text-center transition">
+                            🗺️ الخريطة
+                        </a>
+                    </div>
+                </div>
+
+                <!-- فرع المعادي -->
+                <div class="bg-purple-900/90 border border-amber-400/30 rounded-2xl p-5 flex flex-col justify-between shadow">
+                    <div>
+                        <h3 class="font-bold text-amber-400 text-xl mb-2">📌 فرع المعادي</h3>
+                        <p class="text-xs text-purple-200 mb-2">٥٥ شارع المعراج العلوي خلف كارفور بجوار المدرسة الأمريكية</p>
+                        <div class="text-xs text-amber-200 font-semibold mb-4 space-y-1">
+                            <p>📞 تليفون/واتساب: 01105833441</p>
+                            <p>☎️ هواتف: 01004623737 - 01147589888</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-2">
+                        <a href="https://wa.me/201105833441?text=السلام%20عليكم،%20أريد%20الطلب%20من%20فرع%20المعادي" target="_blank" class="flex-1 bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-2 rounded-xl text-xs text-center transition">
+                            💬 واتساب الفرع
+                        </a>
+                        <a href="https://share.google/kpdRfZ1LatExogmdE" target="_blank" class="flex-1 bg-amber-400 hover:bg-amber-500 text-purple-950 font-bold py-2 px-2 rounded-xl text-xs text-center transition">
+                            🗺️ الخريطة
+                        </a>
+                    </div>
+                </div>
+
+                <!-- فرع المهندسين -->
+                <div class="bg-purple-900/90 border border-amber-400/30 rounded-2xl p-5 flex flex-col justify-between shadow">
+                    <div>
+                        <h3 class="font-bold text-amber-400 text-xl mb-2">📌 فرع المهندسين</h3>
+                        <p class="text-xs text-purple-200 mb-2">١٣ عمر طوسون متفرع من أحمد عرابي</p>
+                        <div class="text-xs text-amber-200 font-semibold mb-4 space-y-1">
+                            <p>📞 تليفون/واتساب: 01142380701</p>
+                            <p>☎️ أرضي: 33028785</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-2">
+                        <a href="https://wa.me/201142380701?text=السلام%20عليكم،%20أريد%20الطلب%20من%20فرع%20المهندسين" target="_blank" class="flex-1 bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-2 rounded-xl text-xs text-center transition">
+                            💬 واتساب الفرع
+                        </a>
+                        <a href="https://maps.app.goo.gl/serVuSZhxxCRijHL8" target="_blank" class="flex-1 bg-amber-400 hover:bg-amber-500 text-purple-950 font-bold py-2 px-2 rounded-xl text-xs text-center transition">
+                            🗺️ الخريطة
+                        </a>
+                    </div>
+                </div>
+
+                <!-- فرع حدائق الأهرام -->
+                <div class="bg-purple-900/90 border border-amber-400/30 rounded-2xl p-5 flex flex-col justify-between shadow">
+                    <div>
+                        <h3 class="font-bold text-amber-400 text-xl mb-2">📌 فرع حدائق الأهرام</h3>
+                        <p class="text-xs text-purple-200 mb-2">١٣ ك لمسة أمل - بوابة منقرع</p>
+                        <div class="text-xs text-amber-200 font-semibold mb-4 space-y-1">
+                            <p>📞 تليفون/واتساب: 01142286660</p>
+                            <p>☎️ هواتف أخرى: 01069956367</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-2">
+                        <a href="https://wa.me/201142286660?text=السلام%20عليكم،%20أريد%20الطلب%20من%20فرع%20الأهرام" target="_blank" class="flex-1 bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-2 rounded-xl text-xs text-center transition">
+                            💬 واتساب الفرع
+                        </a>
+                        <a href="https://maps.app.goo.gl/jXgW8QHeSzVX7wsC9" target="_blank" class="flex-1 bg-amber-400 hover:bg-amber-500 text-purple-950 font-bold py-2 px-2 rounded-xl text-xs text-center transition">
+                            🗺️ الخريطة
+                        </a>
+                    </div>
+                </div>
+
+                <!-- فرع القومية (إمبابة) -->
+                <div class="bg-purple-900/90 border border-amber-400/30 rounded-2xl p-5 flex flex-col justify-between shadow">
+                    <div>
+                        <h3 class="font-bold text-amber-400 text-xl mb-2">📌 فرع القومية</h3>
+                        <p class="text-xs text-purple-200 mb-2">٧٥ شارع القومية العربية (إمبابة)</p>
+                        <div class="text-xs text-amber-200 font-semibold mb-4 space-y-1">
+                            <p>📞 تليفون/واتساب: 01026736716</p>
+                            <p>☎️ أرضي: 0235444252</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-2">
+                        <a href="https://wa.me/201026736716?text=السلام%20عليكم،%20أريد%20الطلب%20من%20فرع%20القومية" target="_blank" class="flex-1 bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-2 rounded-xl text-xs text-center transition">
+                            💬 واتساب الفرع
+                        </a>
+                        <a href="https://maps.app.goo.gl/owsz8rFzHHz44wbF9" target="_blank" class="flex-1 bg-amber-400 hover:bg-amber-500 text-purple-950 font-bold py-2 px-2 rounded-xl text-xs text-center transition">
+                            🗺️ الخريطة
+                        </a>
+                    </div>
+                </div>
+
+                <!-- فرع 6 أكتوبر -->
+                <div class="bg-purple-900/90 border border-amber-400/30 rounded-2xl p-5 flex flex-col justify-between shadow">
+                    <div>
+                        <h3 class="font-bold text-amber-400 text-xl mb-2">📌 فرع 6 أكتوبر</h3>
+                        <p class="text-xs text-purple-200 mb-2">محطة A1 - الياسمين - الحي العاشر بجوار مول المرشدي</p>
+                        <div class="text-xs text-amber-200 font-semibold mb-4 space-y-1">
+                            <p>📞 تليفون/واتساب: 01150185531</p>
+                            <p>☎️ هواتف أخرى: 01062127185</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-2">
+                        <a href="https://wa.me/201150185531?text=السلام%20عليكم،%20أريد%20الطلب%20من%20فرع%20أكتوبر" target="_blank" class="flex-1 bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-2 rounded-xl text-xs text-center transition">
+                            💬 واتساب الفرع
+                        </a>
+                        <a href="https://maps.app.goo.gl/bmsRjkVrk3X542t2A?g_st=iw" target="_blank" class="flex-1 bg-amber-400 hover:bg-amber-500 text-purple-950 font-bold py-2 px-2 rounded-xl text-xs text-center transition">
+                            🗺️ الخريطة
+                        </a>
+                    </div>
+                </div>
+
+            </div>
         </div>
 
     </main>
@@ -79,128 +210,89 @@
                 <h3 class="text-xl font-bold text-purple-950">سلة المشتريات</h3>
                 <button onclick="toggleCartModal()" class="text-gray-400 hover:text-gray-600 text-xl font-bold">&times;</button>
             </div>
-            
-            <div id="cart-items-list" class="overflow-y-auto flex-grow space-y-3 mb-4 divide-y">
-                <!-- Cart items here -->
+            <div id="cart-items-list" class="overflow-y-auto flex-grow space-y-3 mb-4 divide-y"></div>
+            <div class="border-t pt-4 mb-4 flex justify-between text-lg font-bold">
+                <span>الإجمالي الكلي:</span>
+                <span id="cart-total" class="text-purple-900">0 ج.م</span>
             </div>
-
-            <div class="border-t pt-4 mb-4">
-                <div class="flex justify-between text-lg font-bold">
-                    <span>الإجمالي الكلي:</span>
-                    <span id="cart-total" class="text-purple-900">0 ج.م</span>
-                </div>
-            </div>
-
             <div class="space-y-3">
-                <input type="text" id="customer-name" placeholder="اسمك الكريم" class="w-full px-4 py-2 border rounded-xl focus:outline-none focus:ring-2 focus:ring-purple-900">
-                <input type="text" id="customer-phone" placeholder="رقم الموبايل للتواصل" class="w-full px-4 py-2 border rounded-xl focus:outline-none focus:ring-2 focus:ring-purple-900">
-                <textarea id="customer-address" placeholder="عنوان التوصيل بالتفصيل" rows="2" class="w-full px-4 py-2 border rounded-xl focus:outline-none focus:ring-2 focus:ring-purple-900"></textarea>
-                
-                <button onclick="sendOrderWhatsApp()" class="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-3 rounded-xl shadow transition flex justify-center items-center gap-2">
-                    <span>إرسال الأوردر عبر الواتساب</span>
-                </button>
+                <input type="text" id="customer-name" placeholder="اسمك الكريم" class="w-full px-4 py-2 border rounded-xl">
+                <input type="text" id="customer-phone" placeholder="رقم الموبايل" class="w-full px-4 py-2 border rounded-xl">
+                <textarea id="customer-address" placeholder="العنوان بالتفصيل" rows="2" class="w-full px-4 py-2 border rounded-xl"></textarea>
+                <button onclick="sendOrderWhatsApp()" class="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-3 rounded-xl transition">إرسال الأوردر لفرع العجوزة الرئيسي</button>
             </div>
         </div>
     </div>
 
-    <!-- Footer with Branches -->
-    <footer class="bg-purple-950 text-white mt-16 py-10 border-t-4 border-amber-400">
-        <div class="container mx-auto px-4">
-            <h3 class="text-xl font-bold text-amber-400 mb-6 text-center">فروعنا المنتشرة لخدمتكم</h3>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-sm text-purple-200 mb-10">
-                <div class="bg-purple-900/50 p-4 rounded-xl">
-                    <p class="font-bold text-white mb-1">📌 الفرع الرئيسي - العجوزة</p>
-                    <p>٦٦ أبو المحاسن الشاذلي خلف مسرح البالون</p>
-                    <p class="text-amber-400 mt-1">📞 01112249139 - 01019842636</p>
-                </div>
-                <div class="bg-purple-900/50 p-4 rounded-xl">
-                    <p class="font-bold text-white mb-1">📌 فرع المعادي</p>
-                    <p>٥٥ شارع المعراج العلوي خلف كارفور بجوار المدرسة الأمريكية</p>
-                    <p class="text-amber-400 mt-1">📞 01004623737 - 01147589888</p>
-                </div>
-                <div class="bg-purple-900/50 p-4 rounded-xl">
-                    <p class="font-bold text-white mb-1">📌 فرع المهندسين</p>
-                    <p>١٣ عمر طوسون متفرع من أحمد عرابي</p>
-                    <p class="text-amber-400 mt-1">📞 033028785 - 01142380701</p>
-                </div>
-                <div class="bg-purple-900/50 p-4 rounded-xl">
-                    <p class="font-bold text-white mb-1">📌 فرع حدائق الأهرام</p>
-                    <p>١٣ ك لمسة أمل - بوابة منقرع</p>
-                    <p class="text-amber-400 mt-1">📞 01069956367 - 01142286660</p>
-                </div>
-                <div class="bg-purple-900/50 p-4 rounded-xl">
-                    <p class="font-bold text-white mb-1">📌 فرع إمبابة</p>
-                    <p>٧٥ شارع القومية العربية</p>
-                    <p class="text-amber-400 mt-1">📞 01026736716 - 0235444252</p>
-                </div>
-                <div class="bg-purple-900/50 p-4 rounded-xl">
-                    <p class="font-bold text-white mb-1">📌 فرع 6 أكتوبر</p>
-                    <p>محطة A1 - الياسمين - الحي العاشر بجوار مول المرشدي</p>
-                    <p class="text-amber-400 mt-1">📞 01062127185 - 01150185531</p>
-                </div>
+    <!-- Footer with Rigosa Logo & Brand Signature -->
+    <footer class="bg-purple-950 text-white mt-16 py-10 text-center border-t-4 border-amber-400 relative overflow-hidden">
+        <div class="container mx-auto px-4 relative z-10">
+            
+            <!-- Rigosa Brand Badge on Footer -->
+            <div class="mb-6 inline-block bg-white/10 border-2 border-amber-400/60 px-8 py-3 rounded-full shadow-lg">
+                <span class="text-amber-400 font-black tracking-widest text-xl block">Rigosa</span>
+                <span class="text-xs text-amber-200 block font-bold">شريك الجودة والتميز</span>
             </div>
 
-            <!-- Professional Developer Signature linked to 01020390989 -->
-            <div class="border-t border-purple-900 pt-6 text-center">
-                <p class="text-sm text-amber-200 font-medium">
-                    برمجة وتصميم: <span class="text-amber-400 font-bold">يوسف أبو آدم</span>
-                </p>
-                <p class="text-xs text-gray-400 mt-1">
-                    للتواصل وتصميم المشاريع: <a href="https://wa.me/201020390989" target="_blank" class="text-amber-400 hover:underline">01020390989</a>
-                </p>
-                <div class="text-xs text-gray-500 mt-4">
-                    جميع الحقوق محفوظة © طيبة من الفينو للجاتوه 2026
-                </div>
+            <div class="flex justify-center items-center gap-6 mb-4 text-xs text-amber-200">
+                <span>✨ 26 عاماً من الخبرة</span>
+                <span>•</span>
+                <span>🥖 على الأصل دور</span>
+            </div>
+
+            <p class="text-sm text-amber-200 font-medium">برمجة وتصميم: <span class="text-amber-400 font-bold">يوسف أبو آدم</span></p>
+            <p class="text-xs text-gray-400 mt-1">للتواصل وتصميم المشاريع: <a href="https://wa.me/201020390989" target="_blank" class="text-amber-400 hover:underline">01020390989</a></p>
+            
+            <div class="text-xs text-gray-500 mt-6 border-t border-purple-900 pt-4">
+                جميع الحقوق محفوظة © طيبة من الفينو للجاتوه 2026
             </div>
         </div>
     </footer>
 
-    <!-- JavaScript logic -->
+    <!-- Script Logic -->
     <script>
         const menuItems = [
-            // Western & Torte
-            { id: 1, name: 'جاتوه أبيض / شوكولاتة / فاكهة', price: 25, category: 'western', desc: 'قطعة جاتوه طازجة وفاخرة' },
-            { id: 2, name: 'جاتوه فادج / بلاك فورست', price: 30, category: 'western', desc: 'ألذ أنواع الجاتوه الغربي' },
-            { id: 3, name: 'سويسرول أبيض / شوكولاتة', price: 30, category: 'western', desc: 'سويسرول طري محشي كريم چراتيه' },
-            { id: 4, name: 'ملفيه شوكولاتة / سكر / مربی', price: 30, category: 'western', desc: 'ملفيه مقرمش وطازج' },
-            { id: 5, name: 'ترافيل / كشرى حلو / قشطوطة / مدلعه', price: 45, category: 'western', desc: 'أصناف مميزة وحلويات التريند' },
-            { id: 6, name: 'تورته مقاس 24 (شوكولاتة / فواكه / لوتس / أوريو)', price: 350, category: 'western', desc: 'تورته مخصصة للمناسبات' },
-            { id: 7, name: 'تورته مقاس 26 (مسدسة / وردة / قلب / لوتس / سنيكرز / أوريو)', price: 450, category: 'western', desc: 'حجم عائلي كبير ومميز' },
+            // حلويات غربية
+            { id: 1, name: 'جاتوه أبيض', price: 25, category: 'western', desc: 'حلويات غربية طازجة' },
+            { id: 2, name: 'جاتوه شوكولاتة', price: 25, category: 'western', desc: 'حلويات غربية طازجة' },
+            { id: 3, name: 'جاتوه فاكهة', price: 25, category: 'western', desc: 'حلويات غربية طازجة' },
+            { id: 4, name: 'جاتوه فادج', price: 30, category: 'western', desc: 'حلويات غربية طازجة' },
+            { id: 5, name: 'جاتوه بلاك فورست', price: 30, category: 'western', desc: 'حلويات غربية طازجة' },
+            { id: 6, name: 'سويسرول أبيض / شوكولاتة', price: 30, category: 'western', desc: 'سويسرول طري' },
+            { id: 7, name: 'ملفيه شوكولاتة / سكر / مربى', price: 30, category: 'western', desc: 'ملفيه مقرمش' },
+            { id: 8, name: 'ترافيل', price: 35, category: 'western', desc: 'حلويات غربية' },
+            { id: 9, name: 'كشري حلو / قشطوطة / مدلعة', price: 45, category: 'western', desc: 'أصناف التريند' },
+            { id: 10, name: 'جاتوه سواريه (كيلو)', price: 350, category: 'western', desc: 'تشكيلة فاخرة' },
+            
+            // التورت
+            { id: 11, name: 'تورتة مقاس 24 (شوكولاتة / فواكه / لوتس / أوريو)', price: 350, category: 'torte', desc: 'مناسبات' },
+            { id: 12, name: 'تورتة مقاس 26 (عائلية كبرى / فورسيزون)', price: 450, category: 'torte', desc: 'حجم عائلي مميز' },
 
-            // Eastern
-            { id: 8, name: 'بسبوسة سادة / بندق', price: 160, category: 'eastern', desc: 'سعر الكيلو بسبوسة مرملة بالسمن البلدي' },
-            { id: 9, name: 'كنافة بومة / كريمة / سبيجار / سادة', price: 160, category: 'eastern', desc: 'كنافة شرقية أصيلة' },
-            { id: 10, name: 'كنافة مكسرات / أساور مكسرات / نوتيلا', price: 200, category: 'eastern', desc: 'محشية مكسرات فاخرة' },
-            { id: 11, name: 'بلح الشام / زلابية / رموش الست', price: 350, category: 'eastern', desc: 'مقرمشة ومرشوشة بالشربات' },
-            { id: 12, name: 'بلاوة عين جمل / مكسرات لوكس', price: 350, category: 'eastern', desc: 'بقلاوة شرقية فاخرة' },
+            // حلويات شرقية
+            { id: 13, name: 'بسبوسة سادة', price: 160, category: 'eastern', desc: 'سعر الكيلو بالسمن البلدي' },
+            { id: 14, name: 'بسبوسة بندق', price: 220, category: 'eastern', desc: 'سعر الكيلو بالسمن البلدي' },
+            { id: 15, name: 'كنافة بومة / كريمة / سادة', price: 160, category: 'eastern', desc: 'شرقي أصيل' },
+            { id: 16, name: 'كنافة مكسرات / نوتيلا', price: 200, category: 'eastern', desc: 'محشية مكسرات فاخرة' },
+            { id: 17, name: 'بلح الشام / زلابية / رموش الست', price: 350, category: 'eastern', desc: 'مقرمشة ومرشوشة' },
 
-            // Bakery & Fino
-            { id: 13, name: 'فينو عادي', price: 1.5, category: 'bakery', desc: 'القطعة طازجة وساخنة' },
-            { id: 14, name: 'فينو سمسم', price: 2.5, category: 'bakery', desc: 'مخبوزات طازجة يومياً' },
-            { id: 15, name: 'كايزر جامبو قطعتين', price: 13, category: 'bakery', desc: 'للسندوتشات والبرجر' },
-            { id: 16, name: 'قرصة سمر / مبوسة', price: 7, category: 'bakery', desc: 'قرص طرية ومغذية' },
-            { id: 17, name: 'شوريك سادة / بالزبيب', price: 10, category: 'bakery', desc: 'شوريك هش وجميل' },
-            { id: 18, name: 'باتيه جبنة بيضاء / كرواسون سادة', price: 14, category: 'bakery', desc: 'مخبوزات زبدة بلدي' },
-            { id: 19, name: 'ترسا عجوة / كب كيك', price: 25, category: 'bakery', desc: 'مخبوزات متنوّعة' },
+            // مخبوزات ودنش
+            { id: 18, name: 'فينو عادي / فينو سمسم', price: 1.5, category: 'bakery', desc: 'طازج يومياً' },
+            { id: 19, name: 'باتيه جبنة بيضاء / كرواسون سادة', price: 14, category: 'bakery', desc: 'زبدة بلدي' },
+            { id: 20, name: 'دنش تفاح / قرفة / كاستر', price: 12, category: 'bakery', desc: 'طازج' },
 
-            // Salaison & Pizza
-            { id: 20, name: 'ساليزون مشكل (كيلو)', price: 400, category: 'salaison', desc: 'تشكيلة ساليزون فاخرة للمناسبات' },
-            { id: 21, name: 'بيتزا ساليزون / قلاب ساندويتش', price: 400, category: 'salaison', desc: 'مخبوزات حادقة ممتازة' },
-            { id: 22, name: 'مينى كراسون / باتيه (بالكيلو)', price: 350, category: 'salaison', desc: 'تشكيلة ميني حوادق' },
-            { id: 23, name: 'بيتزا إيطالي وسط (سلايم / سويبر / سوسيس / سجق)', price: 120, category: 'salaison', desc: 'بيتزا طازجة بعجين إيطالي' },
-            { id: 24, name: 'بيتزا إيطالي كبير', price: 160, category: 'salaison', desc: 'حجم عائلي مشبع' },
+            // ساليزون وبيتزا
+            { id: 21, name: 'ساليزون مشكل (كيلو)', price: 400, category: 'salaison', desc: 'مخبوزات حادقة' },
+            { id: 22, name: 'بيتزا إيطالي وسط', price: 120, category: 'salaison', desc: 'عجين إيطالي طازج' },
+            { id: 23, name: 'بيتزا إيطالي كبير', price: 160, category: 'salaison', desc: 'حجم عائلي مشبع' },
 
-            // Cookies & Kahk
-            { id: 25, name: 'بسكويت نشادر / برتقال / شوكولاتة (كيلو)', price: 230, category: 'cookies', desc: 'سمن بلدي صافي' },
-            { id: 26, name: 'كعك سادة / عجوة / عجمية (كيلو)', price: 280, category: 'cookies', desc: 'كعك العيد والمناسبات بالسمن البلدي' },
-            { id: 27, name: 'كعك مكسرات / عين جمل (كيلو)', price: 350, category: 'cookies', desc: 'محشو مكسرات فاخرة' },
-            { id: 28, name: 'غريبة سادة / لوز / فستق (كيلو)', price: 350, category: 'cookies', desc: 'غريبة ناعمة تذوب في البوق' },
-            { id: 29, name: 'بيتي فور ممتاز (كيلو)', price: 300, category: 'cookies', desc: 'مشكل بالمربى والشوكولاتة' },
+            // بسكويت وكحك وغريبة
+            { id: 24, name: 'بسكويت نشادر / برتقال (كيلو)', price: 230, category: 'cookies', desc: 'سمن بلدي صافي' },
+            { id: 25, name: 'كعك سادة / عجوة (كيلو)', price: 280, category: 'cookies', desc: 'كعك المناسبات' },
+            { id: 26, name: 'غريبة سادة / لوز (كيلو)', price: 350, category: 'cookies', desc: 'تذوب في البوق' },
 
-            // Diet & Rusk
-            { id: 30, name: 'عين يماميه سن كمون (كيلو)', price: 120, category: 'diet', desc: 'مخبوزات ريجيم صحية' },
-            { id: 31, name: 'عيش سن طرى (3 قطع)', price: 10, category: 'diet', desc: 'بديل الخيار الصحي للدايت' },
-            { id: 32, name: 'عيش سن ناشف (كيلو)', price: 90, category: 'diet', desc: 'مقرمش وصحي' }
+            // نواشف ريجيم
+            { id: 27, name: 'عين يمامية سن كمون (كيلو)', price: 120, category: 'diet', desc: 'مخبوزات ريجيم صحية' },
+            { id: 28, name: 'عيش سن ناشف (كيلو)', price: 90, category: 'diet', desc: 'مقرمش وصحي' }
         ];
 
         let cart = [];
@@ -208,7 +300,6 @@
         function renderMenu(category = 'all') {
             const grid = document.getElementById('menu-grid');
             grid.innerHTML = '';
-            
             const filtered = category === 'all' ? menuItems : menuItems.filter(i => i.category === category);
             
             filtered.forEach(item => {
@@ -216,7 +307,7 @@
                     <div class="bg-white rounded-2xl p-5 shadow-sm border border-purple-100 flex flex-col justify-between hover:shadow-md transition">
                         <div>
                             <h4 class="font-bold text-lg text-purple-950 mb-1">${item.name}</h4>
-                            <p class="text-gray-500 text-sm mb-4">${item.desc}</p>
+                            <p class="text-gray-500 text-sm mb-4">${item.desc || 'طازج يومياً'}</p>
                         </div>
                         <div class="flex justify-between items-center mt-2">
                             <span class="text-purple-900 font-black text-xl">${item.price} ج.م</span>
@@ -229,52 +320,41 @@
 
         function filterCategory(cat) {
             document.querySelectorAll('.cat-btn').forEach(btn => {
-                btn.classList.remove('bg-purple-900', 'text-white', 'active-cat');
+                btn.classList.remove('bg-purple-900', 'text-white');
                 btn.classList.add('bg-white', 'text-purple-900', 'border');
             });
             event.target.classList.remove('bg-white', 'text-purple-900', 'border');
-            event.target.classList.add('bg-purple-900', 'text-white', 'active-cat');
+            event.target.classList.add('bg-purple-900', 'text-white');
             renderMenu(cat);
         }
 
         function addToCart(id) {
             const item = menuItems.find(i => i.id === id);
             const existing = cart.find(i => i.id === id);
-            if (existing) {
-                existing.qty++;
-            } else {
-                cart.push({ ...item, qty: 1 });
-            }
+            if (existing) existing.qty++;
+            else cart.push({ ...item, qty: 1 });
             updateCartUI();
         }
 
         function updateCartUI() {
-            const countElem = document.getElementById('cart-count');
-            const totalQty = cart.reduce((sum, item) => sum + item.qty, 0);
-            countElem.innerText = totalQty;
-
+            document.getElementById('cart-count').innerText = cart.reduce((sum, item) => sum + item.qty, 0);
             const listElem = document.getElementById('cart-items-list');
             listElem.innerHTML = '';
-
             if (cart.length === 0) {
-                listElem.innerHTML = '<p class="text-center text-gray-400 py-6">السلة فارغة حالياً</p>';
+                listElem.innerHTML = '<p class="text-center text-gray-400 py-4">السلة فارغة</p>';
                 document.getElementById('cart-total').innerText = '0 ج.م';
                 return;
             }
-
             let total = 0;
             cart.forEach(item => {
                 total += item.price * item.qty;
                 listElem.innerHTML += `
                     <div class="flex justify-between items-center py-2">
-                        <div>
-                            <h5 class="font-bold text-gray-800">${item.name}</h5>
-                            <span class="text-xs text-purple-900">${item.price} ج.م × ${item.qty}</span>
-                        </div>
+                        <div><h5 class="font-bold">${item.name}</h5><span class="text-xs text-purple-900">${item.price} × ${item.qty}</span></div>
                         <div class="flex items-center gap-2">
-                            <button onclick="changeQty(${item.id}, 1)" class="bg-gray-100 px-2.5 py-1 rounded-lg font-bold hover:bg-gray-200">+</button>
-                            <span class="font-bold">${item.qty}</span>
-                            <button onclick="changeQty(${item.id}, -1)" class="bg-gray-100 px-2.5 py-1 rounded-lg font-bold hover:bg-gray-200">-</button>
+                            <button onclick="changeQty(${item.id}, 1)" class="bg-gray-100 px-2 rounded font-bold">+</button>
+                            <span>${item.qty}</span>
+                            <button onclick="changeQty(${item.id}, -1)" class="bg-gray-100 px-2 rounded font-bold">-</button>
                         </div>
                     </div>
                 `;
@@ -286,55 +366,33 @@
             const item = cart.find(i => i.id === id);
             if (item) {
                 item.qty += delta;
-                if (item.qty <= 0) {
-                    cart = cart.filter(i => i.id !== id);
-                }
+                if (item.qty <= 0) cart = cart.filter(i => i.id !== id);
             }
             updateCartUI();
         }
 
         function toggleCartModal() {
-            const modal = document.getElementById('cart-modal');
-            modal.classList.toggle('hidden');
+            document.getElementById('cart-modal').classList.toggle('hidden');
         }
 
         function sendOrderWhatsApp() {
             const name = document.getElementById('customer-name').value.trim();
             const phone = document.getElementById('customer-phone').value.trim();
             const address = document.getElementById('customer-address').value.trim();
-
-            if (!name || !phone || !address) {
-                alert('من فضلك املأ (الاسم، رقم الموبايل، العنوان) لإتمام الأوردر.');
+            if (!name || !phone || !address || cart.length === 0) {
+                alert('من فضلك أكمل بيانات الأوردر (الاسم، الموبايل، العنوان).');
                 return;
             }
-
-            if (cart.length === 0) {
-                alert('السلة فارغة، اختر منتجات أولاً.');
-                return;
-            }
-
-            let message = `*طلب جديد من منيو طيبة الإلكتروني* 🥐🎂\n\n`;
-            message += `👤 الاسم: ${name}\n`;
-            message += `📞 الموبايل: ${phone}\n`;
-            message += `📍 العنوان: ${address}\n\n`;
-            message += `*الطلبات:* \n`;
-
+            let msg = `*طلب جديد من طيبة* 🥐\n👤 الاسم: ${name}\n📞 الموبايل: ${phone}\n📍 العنوان: ${address}\n\n*الطلبات:*\n`;
             let total = 0;
-            cart.forEach(item => {
-                let sub = item.price * item.qty;
-                total += sub;
-                message += `- ${item.name} (${item.qty}) = ${sub} ج.م\n`;
+            cart.forEach(i => {
+                total += i.price * i.qty;
+                msg += `- ${i.name} (${i.qty}) = ${i.price * i.qty} ج.م\n`;
             });
-
-            message += `\n*الإجمالي الكلي: ${total} ج.م*`;
-
-            // ربط إرسال الأوردر برقم المخبز الأساسي 01112249139
-            const ownerPhone = "201112249139"; 
-            const url = `https://wa.me/${ownerPhone}?text=${encodeURIComponent(message)}`;
-            window.open(url, '_blank');
+            msg += `\n*الإجمالي: ${total} ج.م*`;
+            window.open(`https://wa.me/201112249139?text=${encodeURIComponent(msg)}`, '_blank');
         }
 
-        // Initialize menu
         renderMenu('all');
     </script>
 </body>
